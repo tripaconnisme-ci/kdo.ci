@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <link rel="stylesheet" href="Ensavoir.css">
+  </head>
+  <body>
+      <script src="fichier.js" type="text/javascript"></script>
+  <script>
+         document.addEventListener('DOMContentLoaded', () => {
+  // Animation au survol des membres de l'équipe
+  const teamMembers = document.querySelectorAll('#team .member');
+
+  teamMembers.forEach(member => {
+    member.addEventListener('mouseover', () => {
+      member.style.transform = 'scale(1.1)';
+      member.style.transition = 'transform 0.3s ease-in-out';
+    });
+
+    member.addEventListener('mouseout', () => {
+      member.style.transform = 'scale(1)';
+    });
+  });
+
+  // Fonction pour faire défiler vers la section des services
+  document.querySelector('.btn').addEventListener('click', () => {
+    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Ajoute d'autres interactions ici si nécessaire
+});
+
+ </script>
+    <header>
+      <h1>Notre entreprise</h1>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Bienvenue chez Tripa+225 !</h2>
+        <p>Découvrez nos services de qualité et notre équipe experte pour vous aider dans vos projets.</p>
+<div class="wp-block-column">
+  <h2 class="wp-block-heading has-text-align-center">Contactez-nous&nbsp;!</h4><p>Contactez-nous afin que nous puissions travailler ensemble pour attirer plus de clients vers vos produits et services.</p><p>tripaconnisme.ci@gmail.com <br>0707392216 / 0778742830</p><p><br>Gare de Bassam a Treichville </p><h2>Heures d’ouverture 24/24</h2>
+</div>
+      </section>
+      <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service">
+          <h3>Conseil</h3>
+          <p>Nous offrons un accompagnement personnalisé pour tous vos projets, en respectant vos contraintes et vos besoins.</p>
+        </div>
+        <div class="service">
+          <h3>Marketing digital</h3>
+          <p>Nous sommes spécialisés dans la création de campagnes publicitaires performantes sur les réseaux sociaux et les moteurs de recherche.</p>
+        </div>
+        <div class="service">
+          <h3>Design</h3>
+          <p>Nous mettons à votre disposition une équipe de designers créatifs et talentueux pour concevoir votre image de marque et vos supports de communication.</p>
+        </div>
+      </section>
+      <section id="team">
+        <h2>Notre Équipe</h2>
+        <div class="member">
+          <img src="Marc-Emmanuel.jpeg" alt="Membre de l'équipe 1">
+          <h3>Affroumou Marc-Emmanuel</h3>
+          <p>Directrice de l'agence</p>
+        </div>
+        <div class="member">
+          <img src="Marc-Emmanuel.jpeg" alt="Membre de l'équipe 2">
+          <h3>Diarra P</h3>
+          <p>Responsable marketing digital</p>
+        </div>
+        <div class="member">
+          <img src="Marc-Emmanuel.jpeg" alt="Membre de l'équipe 3">
+          <h3>Dehi Ange</h3>
+          <p>Designer graphique</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Notre Entreprise. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

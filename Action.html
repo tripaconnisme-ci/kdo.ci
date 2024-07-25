@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iscription</title>
+  <meta charset="utf-8">
+  <style>
+  label{
+  width:20%;
+  display:inline-block;
+  text-align: left;
+}
+ body{
+  width:50%;
+  font-family: Arial Black;
+  margin:5px auto;
+  background: #f4f7f8;
+  padding:20px;
+  color:orange;
+}
+
+fieldset{
+  border-radius:8px;
+}
+legend{
+ font-size:1.4em;
+ margin-bottom: 10px;
+}
+
+input[type="text"],input[type="nember"],input[type="email"],[type="password"]
+{
+ border-radius: 5px;
+ width: 70%;
+ background-color: #ffff;
+ margin: 10px;
+}
+
+input[type="submit"]{
+ position: relative;
+ padding: 20px;
+ font-size: 1in8px;
+ border: 1px solid #16a085;
+ border-radius: 2px;
+ margin-top: 8px;
+ width: 100%;
+ font-size: 18px;
+ font-style:Arial Black;
+ color:orange;
+}
+
+
+ul{
+ list-style-type: none;
+ padding: 20px;
+ overflow: hidden;
+ margin: 10px;
+ background-color: #333;
+}
+
+li{
+ display: inline;
+ padding: 10px;
+ margin: 5px;
+}
+
+li a {
+color: orange;
+padding: 20px;
+margin: 5px;
+}
+
+</style>
+</head>
+<body>
+     <script src="fichier.js" type="text/javascript"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('registrationForm');
+  const message = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(event) {
+    message.style.display = 'none'; // Réinitialiser le message d'erreur
+    let errors = [];
+
+    // Validation des champs
+    const name = document.getElementById('name').value.trim();
+    const prenom = document.getElementById('prenom').value.trim();
+    const tel = document.getElementById('tel').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const gender = document.querySelector('input[name="gender"]:checked');
+
+    if (!name) errors.push("Le nom est requis.");
+    if (!prenom) errors.push("Le prénom est requis.");
+    if (!tel || isNaN(tel)) errors.push("Un numéro de téléphone valide est requis.");
+    if (!email || !validateEmail(email)) errors.push("Un email valide est requis.");
+    if (!password) errors.push("Le mot de passe est requis.");
+    if (!gender) errors.push("Le sexe est requis.");
+
+    if (errors.length > 0) {
+      message.innerHTML = errors.join('<br>');
+      message.style.display = 'block';
+      event.preventDefault(); // Empêcher l'envoi du formulaire
+    } else {
+      alert('Inscription réussie !');
+      // Ici tu peux ajouter le code pour envoyer les données du formulaire si nécessaire
+    }
+  });
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+});
+  </script>
+<header>
+<nav>
+  <ul>
+     <li><a href="Ensavoir.html">Acceil</li>
+     <li><a href="Ensavoir.html">Information</li>
+     <li><a href="#">Contact</li>
+  </ul>
+   </header>
+<form action="connect.php" method="post">
+  <fieldset>
+  <legend>Iscription</legend>
+  <label>Non</label><input type="text" placeholder="votre nom ici"/> <br>
+  <label>Prénom</label><input type="text" placeholder="votre prénom ici"/> <br>
+  <label>Tel</label><input type="nember" placeholder="votre numéro de télephone ici"/> <br>
+  <label>Email</label><input type="email"placeholder="votre mail ici"/> <br>
+  <label>passworld</label><input type="password" placeholder="votre mot de passe ici"/> <br>
+  <label>Sexe</label><input type="radio" name="gender" value="Homme"/>Homme <input type="radio" name="gender"value="Femme"/>Femme<br>
+  <input type="submit" value="Valider"/>
+</fieldset>
+</form>

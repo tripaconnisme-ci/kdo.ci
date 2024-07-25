@@ -1,0 +1,234 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  .wp-block-image p, .wp-block-image button {
+    display: none;
+}
+.wp-block-image.active p, .wp-block-image.active button {
+    display: block;
+}
+
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+   padding: 1rem;
+}
+
+.marker {
+  list-style: none;
+  text-decoration: none;
+    
+}
+
+h1 {
+font-size:xx-large;
+color:gold;
+font-family:Arial Black;
+text-align: center;
+width: 10%;
+min-width: 400px;
+}
+
+h2 {
+font-size:xx-large;
+color:gold;
+font-family:Arial Black;
+text-align: center;
+width: 60%;
+min-width: 350px;
+}
+
+h3 {
+width: 50px;
+margin: auto; 
+text-align: center;
+border: 0px solid;
+color:black;
+font-family:Arial Black;
+font-size:small;
+min-width: 150px;
+background-color: green;
+padding: 20px; 
+border-radius: 20px / 10px;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  font-family:Georgia;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.member p {
+  font-style: italic;
+}
+
+p
+{
+width: 50px;
+margin: auto; 
+text-align: center;
+border: 0px solid;
+color:red;
+font-family:Arial Black;
+font-size:small;
+min-width: 350px;
+background-color: orange;
+padding: 20px; 
+border-radius: 20px / 10px;
+}
+
+figcaption {
+width: 50px;
+margin: auto; 
+text-align: center;
+border: 0px solid;
+color:black;
+font-family:Arial Black;
+font-size:small;
+min-width: 250px;
+background-color: white;
+padding: 20px; 
+border-radius: 20px / 10px;
+}
+
+a{
+width:20px; /* On a indiqué une largeur (obligatoire) */
+margin: auto; /* On peut donc demander à ce que le bloc soit
+centré avec auto */
+text-align: center;
+border: 0px solid;
+color:black;
+font-family:Ariel Black;
+font-size:x-large;
+background-color:gold;
+padding: 15px; /* Marge intérieure de 25px */
+border-radius: 20px / 10px;
+
+}
+
+body{
+    margin:0;
+    background:#f2f2f2; 
+    background: #999444;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333888, #EEE111);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #AAA333, #777AAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */font-size:1em
+    }*
+label {
+    cursor: default;
+    font-family: Areil Black;
+    position: relative;
+    color: black;
+    }
+
+button a {
+            background-color: black;
+            border: none;
+            border-radius:10px;
+            color: red;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+button {
+            background-color: black;
+            border: none;
+            border-radius:10px;
+            color: red;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+button {
+      background-color:black;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+
+button:hover {
+      background-color:black;
+      color: #333;
+      border: 1px solid #333;
+    }
+        
+button a {
+            background-color: black;
+            border: none;
+            border-radius:10px;
+            color: red;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+button a :hover {
+            background-color:yellow;
+            color:red;
+            border: 1px solid yellow;
+            text-decoration: none;
+        }
